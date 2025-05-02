@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Scheduling System</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Tech Tonics</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Class Scheduling System</h1>
+
+        <div class="input-section">
+            <label for="day-select">Select a Day:</label>
+            <select id="day-select">
+                <option value="">Select Your Day</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+
+            <button id="get-timetable">Get Timetable</button>
+        </div>
+
+        <div class="timetable-section">
+            <h2>Timetable for <span id="selected-day">Monday</span>:</h2>
+            <ul id="timetable">
+                <!-- Timetable will be listed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <style src="nav.js"></style>
+</body>
+
+</html

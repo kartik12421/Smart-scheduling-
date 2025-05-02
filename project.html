@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    header {
+
+        color: black;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    section {
+        background: #fff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+        font-weight: bold;
+    }
+
+    .logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0 1rem;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .toggle span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        margin: 3px 0;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .toggle {
+            display: flex;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+    }
+
+    .logo {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0 1rem;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        background-color: white;
+        /* Change background color on hover */
+        color: black;
+        /* Change text color on hover */
+        padding-left: 10px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        /* Add some padding for better hover effect */
+        transition: background-color 0.4s, color 0.4s;
+        border-radius: 3px;
+    }
+
+
+    .toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .toggle span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        margin: 1px 0;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .toggle {
+            display: flex;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Tech Tonics</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Our Company</h1>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>Vision</h2>
+            <p>We are a dedicated team committed to delivering top-notch solutions. Our mission is to provide innovative
+                and effective products to meet our customers' needs.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi debitis eveniet culpa et. Tenetur officia
+                nihil dicta debitis pariatur ad inventore? Magni similique quia commodi. Aspernatur incidunt minima,
+                delectus consectetur aperiam ex deleniti reiciendis nesciunt est, tempore aliquid, facilis soluta neque
+                ipsam ipsum velit quo illum temporibus rem voluptatum. Enim, modi magnam exercitationem veniam nostrum
+                facilis.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Our Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> A cutting-edge web application.</li>
+                <li><strong>Project 2:</strong> A mobile app designed for efficiency.</li>
+                <li><strong>Project 3:</strong> An AI-powered tool to enhance productivity.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
